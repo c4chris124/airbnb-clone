@@ -30,7 +30,7 @@ const UserMenu = () => {
                     Airbnb your home
                 </div>
 
-                <div onClick={() => toggleOpen}
+                <div onClick={toggleOpen}
                     className="
                         p-4
                         md:py-1
@@ -62,7 +62,7 @@ const UserMenu = () => {
                 shadow-md
                 w-[40vw]
                 md:w-3/4
-                bg-withe
+                bg-white
                 overflow-hidden
                 right-0
                 top-12
@@ -70,7 +70,14 @@ const UserMenu = () => {
             '>
                     <div className=' flex flex-col cursor-pointer'>
                         <>
-                            <MenuItem />
+                            <MenuItem
+                                onClick={() => { }}
+                                label='Login'
+                            />
+                            <MenuItem
+                                onClick={() => { }}
+                                label='Sign Up'
+                            />
                         </>
                     </div>
                 </div>
